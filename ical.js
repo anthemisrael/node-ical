@@ -104,7 +104,7 @@ let zoneTable = null;
 function getIanaTZFromMS(msTZName) {
   if (!zoneTable) {
     const p = require('path');
-    zoneTable = require(p.join(__dirname, 'windowsZones.json'));
+    zoneTable = require('./windowsZones.json');
   }
 
   // Get hash entry
